@@ -50,7 +50,9 @@ void ger_subsets(std::vector<int> &v, std::vector<int> &curr, int k, std::vector
 
 std::vector<std::vector<int>> ger_subsets(std::vector<int> &v)
 {
- std::vector<std::vector<int>> all;
+ sort(v.begin(), v.end());
+ std::vector<std::vector<int>>
+     all;
  std::vector<int> curr;
  ger_subsets(v, curr, 0, all);
 
